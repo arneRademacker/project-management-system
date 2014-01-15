@@ -1,6 +1,13 @@
+# Binaries #
+bin/
+gen/
 *.class
 
 # Package Files #
 *.jar
 *.war
 *.ear
+
+# Temporary Files #
+.DS_Store
+*~
