@@ -20,6 +20,8 @@ Passwort: test
 
 ansonsten gibts ne fehlermeldung ;) 
 
+ich hab ne jar Datei erstellt die läuft
+
 
 Grüße
 bis Mittwoch wohl
