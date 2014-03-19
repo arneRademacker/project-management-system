@@ -24,24 +24,14 @@ public class Authentication {
 			if (!queryResults.isBeforeFirst() ) {    
 				JOptionPane.showMessageDialog(null,"Falscher Benutzername oder Passwort!");
 				
-				} 
+				}
+			else {
+				JOptionPane.showMessageDialog(null,"Willkommen Herr/Frau " + queryResults.getString("name"));
+			}
 			
 		} catch (SQLException e) {
-			e.printStackTrace();
-		
+			e.printStackTrace();	
 		}
-
-	//Test auf Connection	
-	try {
-		JOptionPane.showMessageDialog(null,"Willkommen Herr/Frau " + queryResults.getString("name"));
-	} catch (HeadlessException e) {
-		// TODO Auto-generated catch block
-		e.printStackTrace();
-	} catch (SQLException e) {
-		// TODO Auto-generated catch block
-		e.printStackTrace();
-	}
-		
 
 	}
 			
