@@ -1,4 +1,4 @@
-package gui;
+package de.szut.ptms.gui;
 
 import java.awt.Color;
 import java.awt.EventQueue;

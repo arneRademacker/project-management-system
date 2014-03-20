@@ -1,4 +1,4 @@
-package gui;
+package de.szut.ptms.gui;
 
 import java.awt.EventQueue;
 import javax.swing.JFrame;
@@ -71,7 +71,7 @@ public class Login extends JFrame {
 			public void actionPerformed(ActionEvent e) {
 //				if(username && password == true){
 				dispose();
-					gui.Project.main(null);
+					Project.main(null);
 //				}else{FEHLER TODO}
 				
 			}

@@ -1,4 +1,4 @@
-package gui;
+package de.szut.ptms.gui;
 
 
 import java.awt.EventQueue;
@@ -199,7 +199,7 @@ public class Project extends JFrame {
 //				dispose();
 //				createProject();
 				dispose();
-				gui.createProject.main(null);
+				createProject.main(null);
 				
 			}
 		});
