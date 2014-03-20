@@ -199,7 +199,7 @@ public class Project extends JFrame {
 //				dispose();
 //				createProject();
 				dispose();
-				createProject.main(null);
+				CreateProjectFrame.main(null);
 				
 			}
 		});

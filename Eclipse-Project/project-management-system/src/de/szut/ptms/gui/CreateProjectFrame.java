@@ -24,7 +24,7 @@ import javax.swing.JSpinner;
 import javax.swing.JSpinner.DateEditor;
 import javax.swing.JTextArea;
 
-public class createProject extends JFrame {
+public class CreateProjectFrame extends JFrame {
 
 	/**
 	 * 
@@ -41,7 +41,7 @@ public class createProject extends JFrame {
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
 				try {
-					createProject frame = new createProject();
+					CreateProjectFrame frame = new CreateProjectFrame();
 					frame.setVisible(true);
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -53,7 +53,7 @@ public class createProject extends JFrame {
 	/**
 	 * Create the frame.
 	 */
-	public createProject() {
+	public CreateProjectFrame() {
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 600, 500);
 		contentPane = new JPanel();

@@ -9,13 +9,13 @@ import javax.swing.JOptionPane;
 
 import de.szut.dataLayer.sqlite.*;
 
-public class Authentication {
+public class Authenticator {
 	
 	private Statement statement;
 
 	ConnectionSqlite connection = new ConnectionSqlite();
 	
-	public void AuthUser(String username, String password) {
+	public void authenticateUser(String username, String password) {
 		connection.ConnectionSqliteIni();
 		String query = "SELECT * FROM employees WHERE validname = '" + username + "'" + " AND password = '" + password+ "'";
 		ResultSet queryResults = null;
