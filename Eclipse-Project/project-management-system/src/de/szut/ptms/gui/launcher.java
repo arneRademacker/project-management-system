@@ -43,7 +43,7 @@ public class launcher extends JFrame {
 		//BackGround Picture
 		
 		try {
-			image = ImageIO.read(new File("C:/Users/Robin/Documents/Git/Anwendungsentwicklung/project-management-system/Eclipse-Project/project-management-system/src/de/szut/ptms/gui/red.jpg"));
+			image = ImageIO.read(new File("assets/red.jpg"));
 			// Set your Image Here.
 			this.setContentPane(new JLabel(new ImageIcon(image)));
 		} catch (IOException e) {
