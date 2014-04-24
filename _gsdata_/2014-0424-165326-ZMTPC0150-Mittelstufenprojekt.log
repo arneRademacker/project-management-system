@@ -1,0 +1,88 @@
+2014-04-24 16:53:26: ----- Auftrag 'Mittelstufenprojekt': ANALYSE gestartet durch Analyze And Sync All auf folgendem PC 'ZMTPC0150' (GoodSync v 9.8.2.5) -----
+2014-04-24 16:53:26: ~rre\Documents\GitHub\project-management-system (C:/Users/rre/Documents/GitHub/project-management-system) [TmpDest] =PropDels=> Z:\GoodSync\Mittelstufenprojekt (Z:/GoodSync/Mittelstufenprojekt) [TmpDest], ReconnectSecs=120, CopyCreateTime
+2014-04-24 16:53:26: Two items on Left side are named the same after normalization and lower-casing: '/Documents/Protokolle/Wöchentliche Protokolle' vs '/Documents/Protokolle/Wöchentliche Protokolle'
+2014-04-24 16:53:26: two items with exactly the same name: KW6
+2014-04-24 16:53:26: two items with exactly the same name: KW9
+2014-04-24 16:53:26: two items with exactly the same name: Ergebnisprotokoll_6.kw.doc
+2014-04-24 16:53:26: two items with exactly the same name: Protokoll 13.01.2014 - 17.01.2014.docx
+2014-04-24 16:53:26: two items with exactly the same name: Aktivitaetsprotokoll_9.kw.doc
+2014-04-24 16:53:26: two items with exactly the same name: Ergebnisprotokoll_9.kw.doc
+2014-04-24 16:53:26: links: Dateien: 258 (ausgeschlossen 0). Ordner: 181 (ausgeschlossen 1). C: NTFS, Frei: 13,7 GB, Gesamt: 111 GB
+2014-04-24 16:53:27: rechts: Dateien: 212 (ausgeschlossen 0). Ordner: 158 (ausgeschlossen 1). Z: //fileserver02/rre NTFS, Frei: 368 GB, Gesamt: 885 GB
+2014-04-24 16:53:27: Analyse mit Fehlermeldungen abgeschlossen. Klicke den Error Button um die Fehler anzuzeigen
+2014-04-24 16:53:27: Änderungen: 66, Konflikte: 0, Kopierdauer: 0, Kopierstatus: 0/0, Fehler: 1
+2014-04-24 16:53:27: Left to Right: Copy File: 63 Delete File: 2 
+2014-04-24 16:53:27: ----- Analyse abgeschlossen. Dauer 00:00:01, Geschwindigkeit: 435 Datei/en -----
+2014-04-24 16:53:27: ===== Auftrag 'Mittelstufenprojekt': SYNC gestartet durch Analyze And Sync All durch folgenden PC 'ZMTPC0150' =====
+2014-04-24 16:53:27: ~rre\Documents\GitHub\project-management-system (C:/Users/rre/Documents/GitHub/project-management-system) [TmpDest] =PropDels=> Z:\GoodSync\Mittelstufenprojekt (Z:/GoodSync/Mittelstufenprojekt) [TmpDest], ReconnectSecs=120, CopyCreateTime
+2014-04-24 16:53:27: Lösche Datei 'Z:/GoodSync/Mittelstufenprojekt/Eclipse-Project/project-management-system/src/de/szut/ptms/main/Main.java'
+2014-04-24 16:53:27: Lösche Ordner 'Z:/GoodSync/Mittelstufenprojekt/Eclipse-Project/project-management-system/src/de/szut/ptms/main'
+2014-04-24 16:53:27: Erstelle Ordner 'Z:/GoodSync/Mittelstufenprojekt/.git/objects/1a'
+2014-04-24 16:53:27: Erstelle Ordner 'Z:/GoodSync/Mittelstufenprojekt/.git/objects/40'
+2014-04-24 16:53:27: Erstelle Ordner 'Z:/GoodSync/Mittelstufenprojekt/.git/objects/4a'
+2014-04-24 16:53:27: Erstelle Ordner 'Z:/GoodSync/Mittelstufenprojekt/.git/objects/62'
+2014-04-24 16:53:27: Erstelle Ordner 'Z:/GoodSync/Mittelstufenprojekt/.git/objects/91'
+2014-04-24 16:53:27: Erstelle Ordner 'Z:/GoodSync/Mittelstufenprojekt/.git/objects/92'
+2014-04-24 16:53:27: Erstelle Ordner 'Z:/GoodSync/Mittelstufenprojekt/.git/objects/d1'
+2014-04-24 16:53:27: Erstelle Ordner 'Z:/GoodSync/Mittelstufenprojekt/Eclipse-Project/project-management-system/bin'
+2014-04-24 16:53:27: Erstelle Ordner 'Z:/GoodSync/Mittelstufenprojekt/Eclipse-Project/project-management-system/bin/de'
+2014-04-24 16:53:27: Erstelle Ordner 'Z:/GoodSync/Mittelstufenprojekt/Eclipse-Project/project-management-system/bin/de/szut'
+2014-04-24 16:53:27: Erstelle Ordner 'Z:/GoodSync/Mittelstufenprojekt/Eclipse-Project/project-management-system/bin/de/szut/dataLayer'
+2014-04-24 16:53:27: Erstelle Ordner 'Z:/GoodSync/Mittelstufenprojekt/Eclipse-Project/project-management-system/bin/de/szut/dataLayer/sqlite'
+2014-04-24 16:53:27: Erstelle Ordner 'Z:/GoodSync/Mittelstufenprojekt/Eclipse-Project/project-management-system/bin/de/szut/ptms'
+2014-04-24 16:53:27: Erstelle Ordner 'Z:/GoodSync/Mittelstufenprojekt/Eclipse-Project/project-management-system/bin/de/szut/ptms/authentication'
+2014-04-24 16:53:27: Erstelle Ordner 'Z:/GoodSync/Mittelstufenprojekt/Eclipse-Project/project-management-system/bin/de/szut/ptms/CurrentProject'
+2014-04-24 16:53:27: Erstelle Ordner 'Z:/GoodSync/Mittelstufenprojekt/Eclipse-Project/project-management-system/bin/de/szut/ptms/gui'
+2014-04-24 16:53:28: Erstelle Ordner 'Z:/GoodSync/Mittelstufenprojekt/Eclipse-Project/project-management-system/bin/de/szut/ptms/user'
+2014-04-24 16:53:28: Erstelle Ordner 'Z:/GoodSync/Mittelstufenprojekt/Eclipse-Project/project-management-system/src/de/szut/ptms/CurrentProject'
+2014-04-24 16:53:28: Kopiere nach 'C:/Users/rre/Documents/GitHub/project-management-system/.git/COMMIT_EDITMSG' -> 'Z:/GoodSync/Mittelstufenprojekt/.git/COMMIT_EDITMSG'
+2014-04-24 16:53:28: Kopiere nach 'C:/Users/rre/Documents/GitHub/project-management-system/.git/index' -> 'Z:/GoodSync/Mittelstufenprojekt/.git/index'
+2014-04-24 16:53:28: Kopiere erneut 'C:/Users/rre/Documents/GitHub/project-management-system/.git/objects/1a/1efb891021929e20376c504276f12b48ff6434' -> 'Z:/GoodSync/Mittelstufenprojekt/.git/objects/1a/1efb891021929e20376c504276f12b48ff6434'
+2014-04-24 16:53:28: Kopiere erneut 'C:/Users/rre/Documents/GitHub/project-management-system/.git/objects/40/564057fcccb0a19c325fe1babad1cc47788a86' -> 'Z:/GoodSync/Mittelstufenprojekt/.git/objects/40/564057fcccb0a19c325fe1babad1cc47788a86'
+2014-04-24 16:53:28: Kopiere erneut 'C:/Users/rre/Documents/GitHub/project-management-system/.git/objects/44/6758bb70321a0edc894e1311f2de0fa2fa8520' -> 'Z:/GoodSync/Mittelstufenprojekt/.git/objects/44/6758bb70321a0edc894e1311f2de0fa2fa8520'
+2014-04-24 16:53:28: Kopiere erneut 'C:/Users/rre/Documents/GitHub/project-management-system/.git/objects/4a/abd554d3cf31d1de02139d5a3f72cb6ad0d044' -> 'Z:/GoodSync/Mittelstufenprojekt/.git/objects/4a/abd554d3cf31d1de02139d5a3f72cb6ad0d044'
+2014-04-24 16:53:28: Kopiere erneut 'C:/Users/rre/Documents/GitHub/project-management-system/.git/objects/62/2138b913fc8aace2a4f653704fd91f9fad24cb' -> 'Z:/GoodSync/Mittelstufenprojekt/.git/objects/62/2138b913fc8aace2a4f653704fd91f9fad24cb'
+2014-04-24 16:53:28: Kopiere erneut 'C:/Users/rre/Documents/GitHub/project-management-system/.git/objects/68/b76b1cd468923d508718d1d5d00291ad092467' -> 'Z:/GoodSync/Mittelstufenprojekt/.git/objects/68/b76b1cd468923d508718d1d5d00291ad092467'
+2014-04-24 16:53:28: Kopiere erneut 'C:/Users/rre/Documents/GitHub/project-management-system/.git/objects/7f/099b23ad7f1156f2fb698b572e18ee0cf03a61' -> 'Z:/GoodSync/Mittelstufenprojekt/.git/objects/7f/099b23ad7f1156f2fb698b572e18ee0cf03a61'
+2014-04-24 16:53:28: Kopiere erneut 'C:/Users/rre/Documents/GitHub/project-management-system/.git/objects/91/a8a134ba4713090e9c38119ef682001248e848' -> 'Z:/GoodSync/Mittelstufenprojekt/.git/objects/91/a8a134ba4713090e9c38119ef682001248e848'
+2014-04-24 16:53:28: Kopiere erneut 'C:/Users/rre/Documents/GitHub/project-management-system/.git/objects/92/008f3da49925a8a0940f84a22fce744aed7541' -> 'Z:/GoodSync/Mittelstufenprojekt/.git/objects/92/008f3da49925a8a0940f84a22fce744aed7541'
+2014-04-24 16:53:28: Kopiere erneut 'C:/Users/rre/Documents/GitHub/project-management-system/.git/objects/d1/e2dae96424ea3f53d2be103f1e7084eb78567f' -> 'Z:/GoodSync/Mittelstufenprojekt/.git/objects/d1/e2dae96424ea3f53d2be103f1e7084eb78567f'
+2014-04-24 16:53:28: Kopiere erneut 'C:/Users/rre/Documents/GitHub/project-management-system/.git/objects/f7/a7d02e9fe1e40a71d8a95262e2fa197c403bad' -> 'Z:/GoodSync/Mittelstufenprojekt/.git/objects/f7/a7d02e9fe1e40a71d8a95262e2fa197c403bad'
+2014-04-24 16:53:28: Kopiere erneut 'C:/Users/rre/Documents/GitHub/project-management-system/.git/objects/f8/88613d1a13989a626ea8ef83b4e739bdaeabf8' -> 'Z:/GoodSync/Mittelstufenprojekt/.git/objects/f8/88613d1a13989a626ea8ef83b4e739bdaeabf8'
+2014-04-24 16:53:28: Kopiere erneut 'C:/Users/rre/Documents/GitHub/project-management-system/.git/objects/fb/9c351cffafec86a3b8b54b852149aa869175e7' -> 'Z:/GoodSync/Mittelstufenprojekt/.git/objects/fb/9c351cffafec86a3b8b54b852149aa869175e7'
+2014-04-24 16:53:28: Kopiere erneut 'C:/Users/rre/Documents/GitHub/project-management-system/.git/objects/fc/094ce7e7d7a35a333e6cc68cdf5f8a6b257a6b' -> 'Z:/GoodSync/Mittelstufenprojekt/.git/objects/fc/094ce7e7d7a35a333e6cc68cdf5f8a6b257a6b'
+2014-04-24 16:53:28: Kopiere erneut 'C:/Users/rre/Documents/GitHub/project-management-system/.git/objects/ff/130c3d61b52f0e9d739041a684a7440f5a51d6' -> 'Z:/GoodSync/Mittelstufenprojekt/.git/objects/ff/130c3d61b52f0e9d739041a684a7440f5a51d6'
+2014-04-24 16:53:28: Kopiere erneut 'C:/Users/rre/Documents/GitHub/project-management-system/.git/objects/ff/6f3ed1f7afecd95e92f48cc68f3aad55c93525' -> 'Z:/GoodSync/Mittelstufenprojekt/.git/objects/ff/6f3ed1f7afecd95e92f48cc68f3aad55c93525'
+2014-04-24 16:53:28: /Documents/Protokolle/Wöchentliche Protokolle: Analyze error: Two items on Left side are named the same after normalization and lower-casing: '/Documents/Protokolle/Wöchentliche Protokolle' vs '/Documents/Protokolle/Wöchentliche Protokolle'
+2014-04-24 16:53:28: Kopiere nach 'C:/Users/rre/Documents/GitHub/project-management-system/Eclipse-Project/project-management-system/assets/ptms_database.sqlite' -> 'Z:/GoodSync/Mittelstufenprojekt/Eclipse-Project/project-management-system/assets/ptms_database.sqlite'
+2014-04-24 16:53:28: Kopiere erneut 'C:/Users/rre/Documents/GitHub/project-management-system/Eclipse-Project/project-management-system/bin/de/szut/dataLayer/sqlite/ConnectionSqlite.class' -> 'Z:/GoodSync/Mittelstufenprojekt/Eclipse-Project/project-management-system/bin/de/szut/dataLayer/sqlite/ConnectionSqlite.class'
+2014-04-24 16:53:28: Kopiere erneut 'C:/Users/rre/Documents/GitHub/project-management-system/Eclipse-Project/project-management-system/bin/de/szut/ptms/authentication/Authenticator.class' -> 'Z:/GoodSync/Mittelstufenprojekt/Eclipse-Project/project-management-system/bin/de/szut/ptms/authentication/Authenticator.class'
+2014-04-24 16:53:28: Kopiere erneut 'C:/Users/rre/Documents/GitHub/project-management-system/Eclipse-Project/project-management-system/bin/de/szut/ptms/CurrentProject/CurrentProject.class' -> 'Z:/GoodSync/Mittelstufenprojekt/Eclipse-Project/project-management-system/bin/de/szut/ptms/CurrentProject/CurrentProject.class'
+2014-04-24 16:53:28: Kopiere erneut 'C:/Users/rre/Documents/GitHub/project-management-system/Eclipse-Project/project-management-system/bin/de/szut/ptms/gui/BoxMainGui$1.class' -> 'Z:/GoodSync/Mittelstufenprojekt/Eclipse-Project/project-management-system/bin/de/szut/ptms/gui/BoxMainGui$1.class'
+2014-04-24 16:53:29: Kopiere erneut 'C:/Users/rre/Documents/GitHub/project-management-system/Eclipse-Project/project-management-system/bin/de/szut/ptms/gui/BoxMainGui$10.class' -> 'Z:/GoodSync/Mittelstufenprojekt/Eclipse-Project/project-management-system/bin/de/szut/ptms/gui/BoxMainGui$10.class'
+2014-04-24 16:53:29: Kopiere erneut 'C:/Users/rre/Documents/GitHub/project-management-system/Eclipse-Project/project-management-system/bin/de/szut/ptms/gui/BoxMainGui$11.class' -> 'Z:/GoodSync/Mittelstufenprojekt/Eclipse-Project/project-management-system/bin/de/szut/ptms/gui/BoxMainGui$11.class'
+2014-04-24 16:53:29: Kopiere erneut 'C:/Users/rre/Documents/GitHub/project-management-system/Eclipse-Project/project-management-system/bin/de/szut/ptms/gui/BoxMainGui$12.class' -> 'Z:/GoodSync/Mittelstufenprojekt/Eclipse-Project/project-management-system/bin/de/szut/ptms/gui/BoxMainGui$12.class'
+2014-04-24 16:53:29: Kopiere erneut 'C:/Users/rre/Documents/GitHub/project-management-system/Eclipse-Project/project-management-system/bin/de/szut/ptms/gui/BoxMainGui$13.class' -> 'Z:/GoodSync/Mittelstufenprojekt/Eclipse-Project/project-management-system/bin/de/szut/ptms/gui/BoxMainGui$13.class'
+2014-04-24 16:53:29: Kopiere erneut 'C:/Users/rre/Documents/GitHub/project-management-system/Eclipse-Project/project-management-system/bin/de/szut/ptms/gui/BoxMainGui$14.class' -> 'Z:/GoodSync/Mittelstufenprojekt/Eclipse-Project/project-management-system/bin/de/szut/ptms/gui/BoxMainGui$14.class'
+2014-04-24 16:53:29: Kopiere erneut 'C:/Users/rre/Documents/GitHub/project-management-system/Eclipse-Project/project-management-system/bin/de/szut/ptms/gui/BoxMainGui$15.class' -> 'Z:/GoodSync/Mittelstufenprojekt/Eclipse-Project/project-management-system/bin/de/szut/ptms/gui/BoxMainGui$15.class'
+2014-04-24 16:53:29: Kopiere erneut 'C:/Users/rre/Documents/GitHub/project-management-system/Eclipse-Project/project-management-system/bin/de/szut/ptms/gui/BoxMainGui$16.class' -> 'Z:/GoodSync/Mittelstufenprojekt/Eclipse-Project/project-management-system/bin/de/szut/ptms/gui/BoxMainGui$16.class'
+2014-04-24 16:53:29: Kopiere erneut 'C:/Users/rre/Documents/GitHub/project-management-system/Eclipse-Project/project-management-system/bin/de/szut/ptms/gui/BoxMainGui$17.class' -> 'Z:/GoodSync/Mittelstufenprojekt/Eclipse-Project/project-management-system/bin/de/szut/ptms/gui/BoxMainGui$17.class'
+2014-04-24 16:53:29: Kopiere erneut 'C:/Users/rre/Documents/GitHub/project-management-system/Eclipse-Project/project-management-system/bin/de/szut/ptms/gui/BoxMainGui$2.class' -> 'Z:/GoodSync/Mittelstufenprojekt/Eclipse-Project/project-management-system/bin/de/szut/ptms/gui/BoxMainGui$2.class'
+2014-04-24 16:53:29: Kopiere erneut 'C:/Users/rre/Documents/GitHub/project-management-system/Eclipse-Project/project-management-system/bin/de/szut/ptms/gui/BoxMainGui$3.class' -> 'Z:/GoodSync/Mittelstufenprojekt/Eclipse-Project/project-management-system/bin/de/szut/ptms/gui/BoxMainGui$3.class'
+2014-04-24 16:53:29: Kopiere erneut 'C:/Users/rre/Documents/GitHub/project-management-system/Eclipse-Project/project-management-system/bin/de/szut/ptms/gui/BoxMainGui$4.class' -> 'Z:/GoodSync/Mittelstufenprojekt/Eclipse-Project/project-management-system/bin/de/szut/ptms/gui/BoxMainGui$4.class'
+2014-04-24 16:53:29: Kopiere erneut 'C:/Users/rre/Documents/GitHub/project-management-system/Eclipse-Project/project-management-system/bin/de/szut/ptms/gui/BoxMainGui$5.class' -> 'Z:/GoodSync/Mittelstufenprojekt/Eclipse-Project/project-management-system/bin/de/szut/ptms/gui/BoxMainGui$5.class'
+2014-04-24 16:53:29: Kopiere erneut 'C:/Users/rre/Documents/GitHub/project-management-system/Eclipse-Project/project-management-system/bin/de/szut/ptms/gui/BoxMainGui$6.class' -> 'Z:/GoodSync/Mittelstufenprojekt/Eclipse-Project/project-management-system/bin/de/szut/ptms/gui/BoxMainGui$6.class'
+2014-04-24 16:53:29: Kopiere erneut 'C:/Users/rre/Documents/GitHub/project-management-system/Eclipse-Project/project-management-system/bin/de/szut/ptms/gui/BoxMainGui$7.class' -> 'Z:/GoodSync/Mittelstufenprojekt/Eclipse-Project/project-management-system/bin/de/szut/ptms/gui/BoxMainGui$7.class'
+2014-04-24 16:53:29: Kopiere erneut 'C:/Users/rre/Documents/GitHub/project-management-system/Eclipse-Project/project-management-system/bin/de/szut/ptms/gui/BoxMainGui$8.class' -> 'Z:/GoodSync/Mittelstufenprojekt/Eclipse-Project/project-management-system/bin/de/szut/ptms/gui/BoxMainGui$8.class'
+2014-04-24 16:53:29: Kopiere erneut 'C:/Users/rre/Documents/GitHub/project-management-system/Eclipse-Project/project-management-system/bin/de/szut/ptms/gui/BoxMainGui$9.class' -> 'Z:/GoodSync/Mittelstufenprojekt/Eclipse-Project/project-management-system/bin/de/szut/ptms/gui/BoxMainGui$9.class'
+2014-04-24 16:53:29: Kopiere erneut 'C:/Users/rre/Documents/GitHub/project-management-system/Eclipse-Project/project-management-system/bin/de/szut/ptms/gui/BoxMainGui.class' -> 'Z:/GoodSync/Mittelstufenprojekt/Eclipse-Project/project-management-system/bin/de/szut/ptms/gui/BoxMainGui.class'
+2014-04-24 16:53:29: Kopiere erneut 'C:/Users/rre/Documents/GitHub/project-management-system/Eclipse-Project/project-management-system/bin/de/szut/ptms/user/User.class' -> 'Z:/GoodSync/Mittelstufenprojekt/Eclipse-Project/project-management-system/bin/de/szut/ptms/user/User.class'
+2014-04-24 16:53:29: Kopiere nach 'C:/Users/rre/Documents/GitHub/project-management-system/Eclipse-Project/project-management-system/src/de/szut/dataLayer/sqlite/ConnectionSqlite.java' -> 'Z:/GoodSync/Mittelstufenprojekt/Eclipse-Project/project-management-system/src/de/szut/dataLayer/sqlite/ConnectionSqlite.java'
+2014-04-24 16:53:29: Kopiere nach 'C:/Users/rre/Documents/GitHub/project-management-system/Eclipse-Project/project-management-system/src/de/szut/ptms/authentication/Authenticator.java' -> 'Z:/GoodSync/Mittelstufenprojekt/Eclipse-Project/project-management-system/src/de/szut/ptms/authentication/Authenticator.java'
+2014-04-24 16:53:29: Kopiere erneut 'C:/Users/rre/Documents/GitHub/project-management-system/Eclipse-Project/project-management-system/src/de/szut/ptms/CurrentProject/CurrentProject.java' -> 'Z:/GoodSync/Mittelstufenprojekt/Eclipse-Project/project-management-system/src/de/szut/ptms/CurrentProject/CurrentProject.java'
+2014-04-24 16:53:29: Kopiere nach 'C:/Users/rre/Documents/GitHub/project-management-system/Eclipse-Project/project-management-system/src/de/szut/ptms/gui/BoxMainGui.java' -> 'Z:/GoodSync/Mittelstufenprojekt/Eclipse-Project/project-management-system/src/de/szut/ptms/gui/BoxMainGui.java'
+2014-04-24 16:53:29: Sichere den Dateistatus C:/Users/rre/Documents/GitHub/project-management-system/_gsdata_/_file_state_v4._gs
+2014-04-24 16:53:30: Sichere den Dateistatus Z:/GoodSync/Mittelstufenprojekt/_gsdata_/_file_state_v4._gs
+2014-04-24 16:53:30: Sync Dateien OK: 65, Fehler: 0
+2014-04-24 16:53:30: ===== Sync abgeschlossen. Dauer: 00:00:03, Geschwindigkeit: 186 KB/s =====
+2014-04-24 16:53:30: 
