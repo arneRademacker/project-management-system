@@ -1,6 +1,6 @@
 package de.szut.ptms.authentication;
 
-import java.awt.HeadlessException;
+
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
@@ -8,10 +8,13 @@ import java.sql.Statement;
 import javax.swing.JOptionPane;
 
 import de.szut.dataLayer.sqlite.*;
+import de.szut.ptms.gui.*;
 
 public class Authenticator {
-	
+
+public Boolean logInOk = false;	
 	private Statement statement;
+
 
 	ConnectionSqlite connection = new ConnectionSqlite();
 	
@@ -23,10 +26,12 @@ public class Authenticator {
 			queryResults = connection.statement.executeQuery(query);
 			if (!queryResults.isBeforeFirst() ) {    
 				JOptionPane.showMessageDialog(null,"Falscher Benutzername oder Passwort!");
+				logInOk = false;
 				
 				}
 			else {
 				JOptionPane.showMessageDialog(null,"Willkommen Herr/Frau " + queryResults.getString("name"));
+				logInOk = true;
 			}
 			
 		} catch (SQLException e) {

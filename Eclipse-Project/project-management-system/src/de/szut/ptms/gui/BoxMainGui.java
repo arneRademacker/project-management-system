@@ -2,12 +2,16 @@ package de.szut.ptms.gui;
 
 import java.awt.BorderLayout;
 import java.awt.Font;
+import java.awt.HeadlessException;
+import java.awt.List;
+
 import javax.swing.AbstractListModel;
 import javax.swing.DefaultComboBoxModel;
 import javax.swing.DefaultListModel;
 import javax.swing.JComboBox;
 import javax.swing.JFrame;
 import javax.swing.JList;
+import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import javax.swing.JPasswordField;
 import javax.swing.JScrollPane;
@@ -15,26 +19,50 @@ import javax.swing.JSpinner;
 import javax.swing.JTextField;
 import javax.swing.ListSelectionModel;
 import javax.swing.SpinnerDateModel;
+
 import java.awt.Dimension;
+
 import javax.swing.JToolBar;
+
 import java.awt.ComponentOrientation;
+
 import javax.swing.JButton;
+
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
+
 import javax.swing.SwingConstants;
 import javax.swing.border.BevelBorder;
+
 import java.awt.Color;
+
 import javax.swing.border.MatteBorder;
+
 import java.awt.Component;
+
 import javax.swing.JLabel;
 import javax.swing.border.EtchedBorder;
+
 import java.awt.CardLayout;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 import java.util.Calendar;
 import java.util.Date;
+
 import javax.swing.JTextArea;
+
 import java.awt.SystemColor;
+
+import de.szut.dataLayer.sqlite.*;
+import de.szut.ptms.CurrentProject.*;
+import de.szut.ptms.authentication.Authenticator;
+
+import java.lang.reflect.Array;
+import java.sql.ResultSet;
+import java.sql.ResultSetMetaData;
+import java.sql.SQLException;
+import java.sql.Statement;
+import java.util.ArrayList;
 
 
 
@@ -65,13 +93,17 @@ class BoxMainGui extends JFrame implements ActionListener {
 	private JTextField txtStartTime;
 	private JTextField txtEndTime;
 	private JTextField txtlblMessage;
+	private Statement statement;
+	ArrayList<ArrayList<String>> arrayChooseProject = new ArrayList<>();
+	ConnectionSqlite connection = new ConnectionSqlite();
 	@SuppressWarnings("rawtypes")
 	private JList liChooseProjectMember, liChoosenMember;
 	@SuppressWarnings("rawtypes")
 	private DefaultListModel lmChooseProjectMember = new DefaultListModel();
 	@SuppressWarnings("rawtypes")
 	private DefaultListModel lmChoosenProjectMember = new DefaultListModel();
-
+	final Authenticator authenticator = new Authenticator();
+	final CurrentProject currentproject = new CurrentProject();
 	public static void main(String[] args) {
 		// Hier wird das Hauptfenster sichtbar gemacht
 		BoxMainGui main = new BoxMainGui();
@@ -322,6 +354,9 @@ class BoxMainGui extends JFrame implements ActionListener {
 		// --------------------------------------------------------------------------//
 
 		txtLoginName = new JTextField();
+		
+	
+		
 		txtLoginName.setHorizontalAlignment(SwingConstants.LEFT);
 		txtLoginName.setBounds(576, 215, 200, 28);
 		pLogin.add(txtLoginName);
@@ -330,12 +365,17 @@ class BoxMainGui extends JFrame implements ActionListener {
 		final JButton btnLogin_1 = new JButton("Login");
 		btnLogin_1.setBackground(Color.GREEN);
 		btnLogin_1.setForeground(Color.BLACK);
-		btnLogin_1.addActionListener(new ActionListener() {
+		btnLogin_1.addActionListener(new ActionListener() 
+		{
 			@SuppressWarnings("deprecation")
-			public void actionPerformed(ActionEvent e) {
-				if(txtLoginName.getText().length() == 0 || pwdBioBrause.getText().length() == 0){
-					txtlblMessage.setVisible(true);
-				}else{
+			public void actionPerformed(ActionEvent e) 
+			{
+				
+				authenticator.authenticateUser( txtLoginName.getText(), pwdBioBrause.getText());
+				
+				if (authenticator.logInOk == true)
+				{
+		
 				lblUserName.setVisible(true);
 				lblUserName.setText("Username: "+txtLoginName.getText());
 				btnChooseProject.setVisible(true);
@@ -344,13 +384,12 @@ class BoxMainGui extends JFrame implements ActionListener {
 				btnNewTicket.setVisible(true);
 				btnLogout.setVisible(true);
 				btnLogin.setVisible(false);
-				// hier wird der text von username und passwordfield ausgelesen
-				//txtLoginName.getText();
-				//passwordField.getText();
-			cardLayout.show(pMain, "ChooseProject");
+				cardLayout.show(pMain, "ChooseProject");
 				}
+					
 			}
-		});
+		}
+		);
 		btnLogin_1.setBounds(884, 412, 170, 69);
 		pLogin.add(btnLogin_1);
 		
@@ -373,6 +412,7 @@ class BoxMainGui extends JFrame implements ActionListener {
 
 		pChooseProject = new JPanel();
 		pMain.add(pChooseProject, "ChooseProject");
+		
 
 		pChooseProject.setBorder(new BevelBorder(BevelBorder.LOWERED, null,
 				null, null, null));
@@ -387,11 +427,46 @@ class BoxMainGui extends JFrame implements ActionListener {
 		JScrollPane spChooseProject = new JScrollPane();
 		pChooseProject.add(spChooseProject, BorderLayout.CENTER);
 
-		final JList liChooseProject = new JList();
+		connection.ConnectionSqliteIni();
+		String queryProjectList = "SELECT projectname FROM project"; 
+		ResultSet queryResults2 = null;
+		try {
+			queryResults2 = connection.statement.executeQuery(queryProjectList);
+			ResultSetMetaData metadata = queryResults2.getMetaData();
+			int numcols = metadata.getColumnCount();
+			
+			while (queryResults2.next()) {
+				
+				ArrayList<String> row = new ArrayList<>(numcols);
+			    int i = 1;
+			    while (i <= numcols) {
+			    	row.add(queryResults2.getString(i++));
+			    }
+			    arrayChooseProject.add(row);
+			    
+			}
+			
+			//System.out.println(arrayChooseProject);
+			
+		}
+		catch (SQLException e1) 
+				{
+					e1.printStackTrace();	
+				}
+	
+
+
+		final JList liChooseProject = new JList(arrayChooseProject.toArray());
 		liChooseProject.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseClicked(MouseEvent arg0) {
 				if (arg0.getClickCount() == 2){
+					
+					int index = liChooseProject.getSelectedIndex();
+					//System.out.println(index);
+					
+					currentproject.selectCurrentProject(index + 1);
+					
 //					System.out.println(liChooseProject.getSelectedValue());
 					lblProjectName.setText("Project Name: "+liChooseProject.getSelectedValue());
 					lblProjectName.setVisible(true);
@@ -401,29 +476,9 @@ class BoxMainGui extends JFrame implements ActionListener {
 				}
 			}
 		});
-		liChooseProject.setModel(new AbstractListModel() {
-			/**
-			 * 
-			 */
-			private static final long serialVersionUID = -3690382633589225836L;
-			String[] values = new String[] {
-					"Insert ProjectlistInsert Projectlist",
-					"Insert Projectlist", "Insert Projectlist",
-					"Insert Projectlist", "TestProject",
-					"Insert Projectlist", "Insert Projectlist",
-					"Insert Projectlist", "ChooseProject",
-					"Insert Projectlist" };
-
-			public int getSize() {
-				return values.length;
-			}
-
-			public Object getElementAt(int index) {
-				return values[index];
-			}
-		});
-		spChooseProject.setViewportView(liChooseProject);
-
+		
+		pChooseProject.add(liChooseProject);
+		
 
 		// --------------------------------------------------------------------------//
 		// pMain Card: pCreateProject
